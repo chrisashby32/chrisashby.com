@@ -58,7 +58,7 @@ export default function Home() {
           <section className="hero-layout proof-strip" aria-label="Selected work preview">
             <p className="proof-label">Selected work</p>
 
-            <a className="proof-card proof-bill" href="#work">
+            <a className="proof-card proof-bill" href="/bill-travel">
               <span className="proof-monogram">BILL</span>
               <h3>Spend &amp; Expense</h3>
               <p>Positioning and launches for a multi-product expense ecosystem.</p>
@@ -111,18 +111,10 @@ export default function Home() {
           </div>
 
           <article className="project project-bill">
-            <div className="project-visual bill-visual" aria-label="Abstract BILL Travel launch composition">
-              <div className="travel-card card-one">
-                <span>BILL / TRAVEL</span>
-                <strong>Policy meets<br />the journey.</strong>
-                <i>0→1 GTM</i>
-              </div>
-              <div className="travel-card card-two">
-                <div className="flight-line"><b /> <span /> <b /></div>
-                <p>SLC</p><p>NYC</p>
-              </div>
-              <div className="travel-stamp">LAUNCH<br />SYSTEM</div>
-            </div>
+            <a className="project-visual bill-visual bill-photo-visual" href="/bill-travel" aria-label="View the BILL Travel launch case study">
+              <img src="/bill-travel/airport-platform.webp" alt="Business traveler in an airport with BILL Travel platform statistics" />
+              <span>BILL Travel · 0→1 launch case study →</span>
+            </a>
             <div className="project-info">
               <div>
                 <span>01 / BILL</span>
@@ -130,7 +122,7 @@ export default function Home() {
                 <p className="project-type">Fintech · GTM strategy · 2026</p>
               </div>
               <p>Led the from-zero go-to-market strategy—positioning, messaging, enablement, and cross-functional rollout—for a connected travel experience inside BILL Spend & Expense.</p>
-              <strong>Position the complex.<br />Launch it clearly.</strong>
+              <strong><a href="/bill-travel">Position the complex.<br />Launch it clearly. ↗</a></strong>
             </div>
           </article>
 
