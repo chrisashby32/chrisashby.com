@@ -73,7 +73,7 @@ export default function Home() {
             </aside>
           </div>
 
-          <p className="mega-word" aria-hidden="true">work</p>
+          <p className="mega-word name-word" aria-hidden="true">Chris Ashby</p>
         </section>
 
         <section className="frame work-frame" id="work" aria-labelledby="work-title">
