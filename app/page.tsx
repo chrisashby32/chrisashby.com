@@ -27,53 +27,80 @@ export default function Home() {
   return (
     <main>
       <div className="page-wrap">
-        <section className="frame hero-frame" id="home">
-          <header className="topbar">
-            <a className="mark" href="#home" aria-label="Chris Ashby, home">CA<span>/</span></a>
-            <p className="top-intro">
-              Product marketer and builder focused on making complex products feel clear, useful, and inevitable.
-            </p>
-            <nav aria-label="Primary navigation">
-              <a href="#home">Home</a>
+        <section className="frame hero-frame hero-shell" id="home">
+          <header className="hero-layout hero-masthead">
+            <a className="hero-mark" href="#home" aria-label="Chris Ashby, home">CA<span>/</span></a>
+            <nav className="hero-nav" aria-label="Primary navigation">
+              <a href="#home" aria-current="page">Home</a>
               <a href="#work">Work</a>
               <a href="#about">About</a>
               <a href="#contact">Contact</a>
             </nav>
           </header>
 
-          <div className="hero-grid">
-            <aside className="side-quote">
-              <span className="quote-mark">“</span>
-              <p>Good strategy feels like a product: clear, useful, and hard to ignore.</p>
-              <span>CA / 2026</span>
-            </aside>
-
-            <div className="hero-content">
-              <p className="micro-label">Chris Ashby · Alpine, Utah</p>
-              <h1>
-                I make <em>complicated</em><br />products feel inevitable.
-              </h1>
-              <div className="hero-profile">
-                <div className="portrait-wrap">
-                  <img src="/chris-ashby.jpg" alt="Chris Ashby" />
-                  <span>Product marketing × product building</span>
-                </div>
-                <p>
-                  Currently leading product marketing for BILL’s Spend & Expense ecosystem. Always building at the intersection of GTM, AI, product, and taste.
-                </p>
-              </div>
+          <section className="hero-layout hero-intro" aria-labelledby="hero-title">
+            <div className="hero-meta">
+              <p>Chris Ashby · Product marketing · Alpine, Utah</p>
+              <span aria-hidden="true" />
             </div>
 
-            <aside className="availability">
-              <span className="status-dot" />
-              <p>Open to thoughtful collaborations, ambitious product problems, and great record recommendations.</p>
-              <a href="https://www.linkedin.com/in/christopher-david-ashby/" target="_blank" rel="noreferrer">
-                Connect <ExternalArrow />
-              </a>
-            </aside>
-          </div>
+            <div className="hero-head">
+              <h1 id="hero-title">I make complicated products easy to <em>say yes</em> to.</h1>
+            </div>
 
-          <p className="mega-word name-word" aria-hidden="true">Chris Ashby</p>
+            <aside className="hero-aside">
+              <span className="hero-dot" aria-hidden="true" />
+              <p>Open to thoughtful collaborations, ambitious product problems, and great record recommendations.</p>
+              <a href="#contact">Connect <ExternalArrow /></a>
+            </aside>
+          </section>
+
+          <section className="hero-layout proof-strip" aria-label="Selected work preview">
+            <p className="proof-label">Selected work</p>
+
+            <a className="proof-card proof-bill" href="#work">
+              <span className="proof-monogram">BILL</span>
+              <h3>Spend &amp; Expense</h3>
+              <p>Positioning and launches for a multi-product expense ecosystem.</p>
+              <span className="proof-arrow">View work →</span>
+            </a>
+
+            <a className="proof-card proof-styled" href="#work">
+              <img src="/styledspace-logo.png" alt="" aria-hidden="true" />
+              <h3>StyledSpace</h3>
+              <p>AI-powered interior design built around individual taste.</p>
+              <span className="proof-arrow">View work →</span>
+            </a>
+
+            <a className="proof-card proof-stream" href="#work">
+              <img src="/streamlaunch-logo.jpg" alt="" aria-hidden="true" />
+              <h3>StreamLaunch</h3>
+              <p>New product and venture work currently taking shape.</p>
+              <span className="proof-arrow">Building now →</span>
+            </a>
+          </section>
+
+          <section className="hero-layout portrait-band" aria-label="About Chris Ashby">
+            <figure className="hero-portrait">
+              <figcaption>Portrait / 2026</figcaption>
+              <img src="/chris-ashby.jpg" alt="Chris Ashby" />
+            </figure>
+
+            <div className="hero-bio">
+              <p>I lead product marketing for BILL’s Spend &amp; Expense ecosystem, turning a dense financial platform into something a finance team can understand in one sentence.</p>
+              <p>I build at the intersection of GTM, AI, product, and taste—usually by shipping the thing instead of writing a deck about it.</p>
+            </div>
+
+            <dl className="hero-stats">
+              <div><dt>Currently</dt><dd>BILL · Spend &amp; Expense</dd></div>
+              <div><dt>Focus</dt><dd>Positioning, launch, GTM</dd></div>
+              <div><dt>Based</dt><dd>Alpine, Utah</dd></div>
+            </dl>
+          </section>
+
+          <div className="hero-nameband" aria-hidden="true">
+            <p>Chris Ashby</p>
+          </div>
         </section>
 
         <section className="frame work-frame" id="work" aria-labelledby="work-title">
