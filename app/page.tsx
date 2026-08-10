@@ -69,15 +69,15 @@ export default function Home() {
               <img src="/styledspace-logo.png" alt="" aria-hidden="true" />
               <h3>StyledSpace</h3>
               <p>AI-powered interior design built around individual taste.</p>
-              <span className="proof-arrow">View work →</span>
-            </a>
-
-            <a className="proof-card proof-stream" href="#work">
-              <img src="/streamlaunch-logo.jpg" alt="" aria-hidden="true" />
-              <h3>StreamLaunch</h3>
-              <p>New product and venture work currently taking shape.</p>
               <span className="proof-arrow">Building now →</span>
             </a>
+
+            <div className="proof-card proof-stream">
+              <img src="/streamlaunch-logo.jpg" alt="" aria-hidden="true" />
+              <h3>StreamLaunch</h3>
+              <p>Independent product venture built and operated from 2022–2024.</p>
+              <span className="proof-arrow">Past venture · 2022—2024</span>
+            </div>
           </section>
 
           <section className="hero-layout portrait-band" aria-label="About Chris Ashby">
