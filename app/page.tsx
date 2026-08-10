@@ -38,6 +38,28 @@ export default function Home() {
             </nav>
           </header>
 
+          <section className="hero-layout portrait-band" aria-label="About Chris Ashby">
+            <figure className="hero-portrait">
+              <figcaption>Portrait / 2026</figcaption>
+              <img src="/chris-ashby.jpg" alt="Chris Ashby" />
+            </figure>
+
+            <div className="hero-bio">
+              <p>I lead product marketing for BILL’s Spend &amp; Expense ecosystem, turning a dense financial platform into something a finance team can understand in one sentence.</p>
+              <p>I build at the intersection of GTM, AI, product, and taste—usually by shipping the thing instead of writing a deck about it.</p>
+            </div>
+
+            <dl className="hero-stats">
+              <div><dt>Currently</dt><dd>BILL · Spend &amp; Expense</dd></div>
+              <div><dt>Focus</dt><dd>Positioning, launch, GTM</dd></div>
+              <div><dt>Based</dt><dd>Alpine, Utah</dd></div>
+            </dl>
+          </section>
+
+          <div className="hero-nameband" aria-hidden="true">
+            <p>Chris Ashby</p>
+          </div>
+
           <section className="hero-layout hero-intro" aria-labelledby="hero-title">
             <div className="hero-meta">
               <p>Chris Ashby · Product marketing · Alpine, Utah</p>
@@ -80,27 +102,6 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="hero-layout portrait-band" aria-label="About Chris Ashby">
-            <figure className="hero-portrait">
-              <figcaption>Portrait / 2026</figcaption>
-              <img src="/chris-ashby.jpg" alt="Chris Ashby" />
-            </figure>
-
-            <div className="hero-bio">
-              <p>I lead product marketing for BILL’s Spend &amp; Expense ecosystem, turning a dense financial platform into something a finance team can understand in one sentence.</p>
-              <p>I build at the intersection of GTM, AI, product, and taste—usually by shipping the thing instead of writing a deck about it.</p>
-            </div>
-
-            <dl className="hero-stats">
-              <div><dt>Currently</dt><dd>BILL · Spend &amp; Expense</dd></div>
-              <div><dt>Focus</dt><dd>Positioning, launch, GTM</dd></div>
-              <div><dt>Based</dt><dd>Alpine, Utah</dd></div>
-            </dl>
-          </section>
-
-          <div className="hero-nameband" aria-hidden="true">
-            <p>Chris Ashby</p>
-          </div>
         </section>
 
         <section className="frame work-frame" id="work" aria-labelledby="work-title">
