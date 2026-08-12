@@ -90,7 +90,7 @@ export default function Home() {
             <a className="proof-card proof-styled" href="#work">
               <img src="/styledspace-logo.png" alt="" aria-hidden="true" />
               <h3>StyledSpace</h3>
-              <p>AI-powered interior design built around individual taste.</p>
+              <p>Upload a room. Choose a style. Get a shoppable AI redesign.</p>
               <span className="proof-arrow">Building now →</span>
             </a>
 
@@ -152,23 +152,29 @@ export default function Home() {
           </article>
 
           <article className="project project-styled">
-            <div className="project-visual styled-visual" aria-label="StyledSpace modular design composition">
-              <div className="room-grid">
-                <span className="swatch swatch-one" />
-                <span className="swatch swatch-two" />
-                <span className="swatch swatch-three" />
-                <div className="space-card"><small>ROOM / 01</small><strong>Make space<br />feel like you.</strong></div>
+            <a className="project-visual styled-visual" href="https://styledspace.io" target="_blank" rel="noreferrer" aria-label="Visit StyledSpace">
+              <figure className="styled-after">
+                <img src="/styledspace/room-after.png" alt="Living room redesigned by StyledSpace in a warm transitional style" />
+                <figcaption>AI redesign / shoppable result</figcaption>
+              </figure>
+              <figure className="styled-before">
+                <img src="/styledspace/room-before.jpg" alt="Original living room before its StyledSpace redesign" />
+                <figcaption>Original room</figcaption>
+              </figure>
+              <div className="styled-process">
+                <img src="/styledspace-logo.png" alt="" aria-hidden="true" />
+                <span>Upload → Style → Redesign → Shop</span>
               </div>
-              <p className="styled-mark">SS</p>
-            </div>
+              <span className="styled-site">StyledSpace.io ↗</span>
+            </a>
             <div className="project-info">
               <div>
                 <span>03 / STYLEDSPACE</span>
-                <h3>AI for human taste</h3>
-                <p className="project-type">AI · Interior design · Building now</p>
+                <h3>From room photo to shoppable redesign</h3>
+                <p className="project-type">AI interior design · Product + brand · Building now</p>
               </div>
-              <p>An AI-driven interior design platform in development—built to help people turn a feeling, reference, or half-formed idea into a room that feels personal and possible.</p>
-              <strong>Creativity in.<br />A livable plan out.</strong>
+              <p>Building an AI interior design suite that lets people upload their room, choose from styles shaped by real designers, see a photorealistic redesign, and shop the pieces that bring it to life.</p>
+              <strong><a href="https://styledspace.io" target="_blank" rel="noreferrer">Your room in.<br />A shoppable vision out. ↗</a></strong>
             </div>
           </article>
         </section>
