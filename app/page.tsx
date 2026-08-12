@@ -81,7 +81,7 @@ export default function Home() {
             <p className="proof-label">Selected work</p>
 
             <a className="proof-card proof-bill" href="/bill-travel">
-              <img src="/bill-logo.svg" alt="BILL" />
+              <img src="/bill-mark.png" alt="BILL" />
               <h3>Spend &amp; Expense</h3>
               <p>Positioning and launches for a multi-product expense ecosystem.</p>
               <span className="proof-arrow">View work →</span>

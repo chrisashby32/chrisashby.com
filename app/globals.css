@@ -71,7 +71,6 @@ p, h1, h2, h3 { margin: 0; }
 .proof-styled { grid-column: 7 / span 3; }
 .proof-stream { grid-column: 10 / span 3; }
 .proof-card img { width: 32px; height: 32px; object-fit: contain; }
-.proof-bill img { width: 53px; height: 34px; object-position: left center; }
 .proof-stream img { width: 42px; mix-blend-mode: multiply; }
 .proof-card h3 { font-size: clamp(1rem, 1.3vw, 1.2rem); font-weight: 600; letter-spacing: -.015em; }
 .proof-card p { color: #83837a; font-size: .78rem; line-height: 1.5; }
