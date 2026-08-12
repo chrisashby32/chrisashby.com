@@ -44,8 +44,8 @@ export default function BeforeAfter({ beforeSrc, beforeAlt, afterSrc, afterAlt }
 
   return (
     <div className="before-after styled-comparison" style={style}>
-      <img className="before-after-image before-after-before" src={beforeSrc} alt={beforeAlt} />
       <img className="before-after-image before-after-after" src={afterSrc} alt={afterAlt} />
+      <img className="before-after-image before-after-before" src={beforeSrc} alt={beforeAlt} />
 
       <span className="before-after-label before-label">Before</span>
       <span className="before-after-label after-label">After</span>
