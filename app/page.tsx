@@ -1,3 +1,5 @@
+import BeforeAfter from "./components/before-after";
+
 const experience = [
   {
     years: "2022—Now",
@@ -152,21 +154,19 @@ export default function Home() {
           </article>
 
           <article className="project project-styled">
-            <a className="project-visual styled-visual" href="https://styledspace.io" target="_blank" rel="noreferrer" aria-label="Visit StyledSpace">
-              <figure className="styled-after">
-                <img src="/styledspace/room-after.png" alt="Living room redesigned by StyledSpace in a warm transitional style" />
-                <figcaption>AI redesign / shoppable result</figcaption>
-              </figure>
-              <figure className="styled-before">
-                <img src="/styledspace/room-before.jpg" alt="Original living room before its StyledSpace redesign" />
-                <figcaption>Original room</figcaption>
-              </figure>
+            <div className="project-visual styled-visual">
+              <BeforeAfter
+                beforeSrc="/styledspace/room-before.jpg"
+                beforeAlt="Original living room before its StyledSpace redesign"
+                afterSrc="/styledspace/room-after.png"
+                afterAlt="The same living room redesigned by StyledSpace in a warm transitional style"
+              />
               <div className="styled-process">
                 <img src="/styledspace-logo.png" alt="" aria-hidden="true" />
                 <span>Upload → Style → Redesign → Shop</span>
               </div>
-              <span className="styled-site">StyledSpace.io ↗</span>
-            </a>
+              <a className="styled-site" href="https://styledspace.io" target="_blank" rel="noreferrer">StyledSpace.io ↗</a>
+            </div>
             <div className="project-info">
               <div>
                 <span>03 / STYLEDSPACE</span>

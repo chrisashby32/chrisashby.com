@@ -136,15 +136,20 @@ p, h1, h2, h3 { margin: 0; }
 .launch-seal small { margin-top: 8px; color: #c7cfc8; font-size: .52rem; text-transform: uppercase; letter-spacing: .08em; }
 
 .styled-visual { min-height: 680px; padding: clamp(24px, 4vw, 64px); background: #84947f; color: var(--paper); }
-.styled-visual figure { margin: 0; }
-.styled-after { width: 74%; height: 100%; margin-left: auto !important; }
-.styled-after img { display: block; width: 100%; height: 100%; min-height: 552px; object-fit: cover; }
-.styled-after figcaption, .styled-before figcaption { padding-top: 9px; font-size: .56rem; letter-spacing: .11em; text-transform: uppercase; }
-.styled-before { position: absolute; z-index: 2; left: clamp(24px, 4vw, 64px); bottom: clamp(64px, 7vw, 105px); width: min(30%, 390px); padding: 10px 10px 14px; background: var(--paper); color: var(--ink); box-shadow: 14px 16px 0 rgba(20,21,15,.16); transform: rotate(-2.5deg); }
-.styled-before img { display: block; width: 100%; aspect-ratio: 1.42; object-fit: cover; }
+.styled-comparison { width: min(78%, 1120px); margin-left: auto; }
+.before-after { position: relative; aspect-ratio: 1.4218; overflow: hidden; background: #d8d5cc; box-shadow: 18px 20px 0 rgba(20,21,15,.16); }
+.before-after-image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; pointer-events: none; user-select: none; }
+.before-after-after { clip-path: inset(0 calc(100% - var(--reveal)) 0 0); }
+.before-after-divider { position: absolute; z-index: 3; top: 0; bottom: 0; left: var(--reveal); width: 2px; background: rgba(255,255,255,.92); transform: translateX(-1px); pointer-events: none; }
+.before-after-divider i { position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid rgba(20,21,15,.28); border-radius: 50%; background: var(--paper); color: var(--ink); box-shadow: 0 7px 20px rgba(20,21,15,.18); font: normal 600 .78rem var(--font-inter-tight), Arial, sans-serif; letter-spacing: .16em; transform: translate(-50%,-50%); }
+.before-after-label { position: absolute; z-index: 2; top: 14px; padding: 7px 9px; background: rgba(20,21,15,.76); color: white; font-size: .54rem; font-weight: 600; letter-spacing: .11em; text-transform: uppercase; pointer-events: none; }
+.before-label { left: 14px; }
+.after-label { right: 14px; }
+.before-after-range { position: absolute; z-index: 4; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; touch-action: pan-y; }
+.before-after-hint { position: absolute; z-index: 2; left: 50%; bottom: 12px; padding: 6px 9px; background: rgba(20,21,15,.72); color: white; font-size: .5rem; letter-spacing: .1em; text-transform: uppercase; transform: translateX(-50%); pointer-events: none; }
 .styled-process { position: absolute; z-index: 3; left: clamp(24px, 4vw, 64px); top: clamp(24px, 4vw, 64px); display: grid; gap: 14px; width: min(210px, 22%); color: #f4f1e8; font-size: .64rem; line-height: 1.45; letter-spacing: .1em; text-transform: uppercase; }
 .styled-process img { width: 50px; height: 50px; object-fit: contain; }
-.styled-site { position: absolute; z-index: 3; right: clamp(24px, 4vw, 64px); bottom: 20px; font-size: .62rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.styled-site { position: absolute; z-index: 6; right: clamp(24px, 4vw, 64px); bottom: 20px; padding-bottom: 3px; border-bottom: 1px solid currentColor; font-size: .62rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 
 .about-frame { min-height: 980px; padding: 80px 30px 240px; }
 .about-grid { display: grid; grid-template-columns: .9fr 1.35fr .75fr; gap: 42px; }
@@ -293,9 +298,10 @@ p, h1, h2, h3 { margin: 0; }
   .growth-line { position: absolute; right: 25px; width: auto; }
   .launch-seal { width: 112px; }
   .styled-visual { min-height: 500px; padding: 18px; }
-  .styled-after { width: 88%; height: 100%; }
-  .styled-after img { min-height: 410px; }
-  .styled-before { left: 18px; bottom: 62px; width: 44%; padding: 7px 7px 10px; box-shadow: 8px 9px 0 rgba(20,21,15,.16); }
+  .styled-comparison { width: 88%; margin-top: 72px; }
+  .before-after { box-shadow: 9px 10px 0 rgba(20,21,15,.16); }
+  .before-after-divider i { width: 38px; height: 38px; }
+  .before-after-hint { display: none; }
   .styled-process { left: 18px; top: 18px; width: 31%; font-size: .52rem; }
   .styled-process img { width: 38px; height: 38px; }
   .styled-site { right: 18px; bottom: 18px; }
